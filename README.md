@@ -24,9 +24,11 @@ This is Akash's repository.
 			}
 		}
 		
-		//If p is not prime, the 2 will be added to p (there is no need to check an even number and p is always odd).
+		//If p is not prime, the 2 will be added to p (there is no need to check an even number and p is always odd)
+		//and it will move on to the next number. 
 		//If p is prime, then it will be printed and 1 will be added to c. Of course, you don't need to print all 
-		//the prime numbers leading up to the one you want, but I thought it would be nice to see it all go.  
+		//the prime numbers leading up to the one you want, but I thought it would be nice to see it all go. Again
+		//2 will be added to p and it will continue. 
 			if (factors >= 1) {
 				p = p+2;
 			}
