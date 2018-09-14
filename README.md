@@ -4,8 +4,9 @@ This is Akash's repository.
 
 //The following is a prime number finder program in Java (eclipse IDE). 
 
-public class PrimeFinder {
-	public static void main(String[] args) {
+
+	public class PrimeFinder {
+		public static void main(String[] args) {
 		
 		double p = 5;
 		double c = 0;
@@ -30,4 +31,4 @@ public class PrimeFinder {
 			}		
 		}			
 	}
-}
+	}
