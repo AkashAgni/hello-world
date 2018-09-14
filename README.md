@@ -19,7 +19,8 @@ This is Akash's repository.
 		for(double i = 2; i <= (p/2); ++i) {	
 			if((p%i)==0) {
 				++factors;
-				i = (p/2); //Terminate the loop.
+				i = (p/2); //Terminate the loop. This significantly shortens the processing time. Without this 
+					   //line, finding the prime at n = 100,000 takes 1 hour instead of (under) 10 mins. 
 			}
 		}
 		
