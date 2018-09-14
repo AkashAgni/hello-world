@@ -8,24 +8,29 @@ This is Akash's repository.
 	public class PrimeFinder {
 		public static void main(String[] args) {
 		
-		double p = 5;
-		double c = 0;
+		double p = 5;	   //This is the number that is being checked to see if it is a prime. Starting at p = 5 so 
+				   //that it does not mess up the for loop conditions.
+		double c = 0; 	   //This double holds the order of the prime. Eg, if the 134th prime is found, c will equal 134.
 		double n = 100000; //This represents the nth prime you want to find. 
-                       //For instance, if you want to find the 100th prime, set n=100; 
+                       		   //For instance, if you want to find the 100th prime, set n=100; 
 		
 		while(c < (n-2)) {
-		double k = 0;	
+		double factors = 0;	
 		for(double i = 2; i <= (p/2); ++i) {	
 			if((p%i)==0) {
-				++k;
+				++factors;
 				i = (p/2); //Terminate the loop.
 			}
 		}
-			if (k >= 1) {
+		
+		//If p is not prime, the 2 will be added to p (there is no need to check an even number and p is always odd).
+		//If p is prime, then it will be printed and 1 will be added to c. Of course, you don't need to print all 
+		//the prime numbers leading up to the one you want, but I thought it would be nice to see it all go.  
+			if (factors >= 1) {
 				p = p+2;
 			}
-			else {
-				System.out.println(p);
+			else {	
+				System.out.println(p); 	
 				p = p+2;
 				++c;
 			}		
